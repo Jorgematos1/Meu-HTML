@@ -1,12 +1,25 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    height: 100vh;
-    margin: 0px;
-}
 
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+html, body {
+    min-height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
 
 .paragrafo__texto__legenda {
     font-size: 20px;
@@ -33,6 +46,7 @@ body {
     justify-content: center;
     
 }
+
 
 .rede-sociais span {
     font-size: 14px;
@@ -76,3 +90,12 @@ header img {
     margin-bottom: 10px;
     font-size: 18px;
 }
+
+
+footer{
+    height: 100%;
+}
+
+
+
+
