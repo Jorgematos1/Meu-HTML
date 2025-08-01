@@ -18,6 +18,7 @@ body{
     flex-direction: column;
 }
 main{
+    text-align: center;
     flex: 1;
 }
 
@@ -83,7 +84,7 @@ header img {
 }
 
 .main_image {
-    width: 100vw;
+    width: 70%;
 }
 
 .copy {
@@ -96,6 +97,76 @@ footer{
     height: 100%;
 }
 
+.flexRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.box-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.card input{
+    height: 20px;
+    width: 20px;
+}
+
+.card p{
+ display: inline-block;
+}
+
+.box-button button{
+    box-sizing: border-box;
+    padding: 15px 30px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (width < 500px) {
+    .redes-sociais {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  }
+  
+
+.cardname {
+    color: blue;
+}
+.Texto-Promocional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.Texto-Promocional p{
+    font-size: 20px;
+    font-weight: 500;
+
+}
