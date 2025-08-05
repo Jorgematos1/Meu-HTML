@@ -25,25 +25,36 @@
         </div>
     </header>
 
-    <main>
-        <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger">
+    <main class="Fomulario">
+        <div class="form-img">
+            <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger">
+        </div>
         <section class="pag-contato">
-            <h3 class="tit-formulario">Sobre você</h3>
+            <h3 class="title-formulario">Sobre você</h3>
             <form action="#" method="post" class="form-contato">
-                <input type="text" id="Nome do Usuário" name="nome" placeholder="Nome">
-                <input type="text" id="email de Contato" name="email" placeholder="Email">
-                <input type="text" id="Telefone" name="cpf" placeholder="Telefone">
+
+                <div></div>
+                <input type="text" id="Nome do Usuário" name="nome" placeholder="Nome*">
+                <input type="text" id="email de Contato" name="email" placeholder="Email*">
+                <input type="text" id="CPF do Usuário de " name="CPF" placeholder="CPF*">
+                <input type="text" id="Sobrenome do Usuário de " name="Sobrenome" placeholder="Sobrenome*">
+
+                <input type="text" id="Telefone" name="cpf" placeholder="Telefone*">
                 <select name="Tipo de Contato" id="">
                     <option value="">Elogio</option>
                     <option value="">Reclamação</option>
                     <option value="">Solicitação</option>
                 </select>
+                <textarea placeholder="Digite sua Mensagem" name="" id="" cols="30" rows="10"></textarea>
             </form>
+            <div class="button-sub">
+                <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </div>
 
         </section>
 
-        
-        
+
+
     </main>
 
 
