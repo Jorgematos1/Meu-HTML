@@ -9,21 +9,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 70vw;
+    width: 100%;
 }
 
 
 body {
     min-height: 100vh;
-}
-
-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
     text-align: center;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .paragrafo__texto__legenda {
@@ -75,6 +80,7 @@ header {
     border-bottom: 1px solid black;
     margin-bottom: 2rem;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 header a {
@@ -110,6 +116,7 @@ header img {
 
 footer {
     height: 100%;
+    width: 100%;
 }
 
 .flexRow {
@@ -169,19 +176,27 @@ footer {
     color: white;
     padding: 8px;
     cursor: pointer;
+    transition: all 0, 5s ease;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.button-sub{
+.button-sub {
     display: flex;
     justify-content: flex-end;
 }
 
-@media screen and (width < 500px) {
+/* @media (max-width: 750px) {
+    .logo-footer {
+        display: none;
+    }
+
     .redes-sociais {
-        display: flex;
-        flex-direction: column !important;
+        display: none;
     }
 
     .copy {
@@ -189,6 +204,12 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+} */
+
+@media (max-width: 750px) {
+    .barra-footer {
+        flex-direction: column !important;
     }
 }
 
@@ -221,6 +242,7 @@ footer {
     justify-content: center;
     margin-top: 5rem;
 
+
 }
 
 
@@ -235,6 +257,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+#texto-area {
+    font-family: 'Poppins', sans-serif;
+}
+
 .form-contato input {
     height: 2rem;
     width: 280px;
@@ -244,15 +270,59 @@ footer {
 
 
 
-.tit-formulario{
+.tit-formulario {
     position: relative;
     top: 1rem;
 }
-input,button,select,option,form{
+
+input,
+button,
+select,
+option,
+form {
     border-radius: 5px;
 }
-select{
+
+select {
     height: 2rem;
     width: 280px;
     border-radius: 10px;
+}
+
+.title-formulario {
+    margin: 20px 0px 0px;
+}
+
+@media (max-width: 750px) {
+    .img-form {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .button-sub {
+        justify-content: center !important;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo-footer {
+        width: 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .div-logo-footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .copy-footer {
+        display: flex;
+        justify-content: center;
+    }
 }

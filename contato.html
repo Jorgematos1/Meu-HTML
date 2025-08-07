@@ -26,33 +26,35 @@
     </header>
 
     <main class="Fomulario">
-        <div class="form-img">
-            <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger">
-        </div>
-        <section class="pag-contato">
-            <h3 class="title-formulario">Sobre você</h3>
-            <form action="#" method="post" class="form-contato">
-
-                <div></div>
-                <input type="text" id="Nome do Usuário" name="nome" placeholder="Nome*">
-                <input type="text" id="email de Contato" name="email" placeholder="Email*">
-                <input type="text" id="CPF do Usuário de " name="CPF" placeholder="CPF*">
-                <input type="text" id="Sobrenome do Usuário de " name="Sobrenome" placeholder="Sobrenome*">
-
-                <input type="text" id="Telefone" name="cpf" placeholder="Telefone*">
-                <select name="Tipo de Contato" id="">
-                    <option value="">Elogio</option>
-                    <option value="">Reclamação</option>
-                    <option value="">Solicitação</option>
-                </select>
-                <textarea placeholder="Digite sua Mensagem" name="" id="" cols="30" rows="10"></textarea>
-            </form>
-            <div class="button-sub">
-                <button type="submit" class="submit-button">Enviar Mensagem</button>
+        <div class="img-form" style="display: flex; flex-direction: row;">
+            <div class="form-img">
+                <img src="/img/xls 2.2 diesel.jpg" alt="Ford Ranger">
             </div>
+            <section class="pag-contato">
+                <h3 class="title-formulario">Sobre você</h3>
+                <form action="#" method="post" class="form-contato">
 
-        </section>
+                    <div></div>
+                    <input type="text" id="Nome do Usuário" name="nome" placeholder="Nome*">
+                    <input type="email" id="email de Contato" name="email" placeholder="Email*">
 
+
+
+                    <input type="tel" id="Telefone" name="cpf" placeholder=Telefone>
+                    <select name="Tipo de Contato" id="">
+                        <option value="" disabled selected hidden>Tipo de Contato</option>
+                        <option value="">Elogio</option>
+                        <option value="">Reclamação</option>
+                        <option value="">Solicitação</option>
+                    </select>
+                    <textarea placeholder="Digite sua Mensagem" name="" id="texto-area" cols="30" rows="10"></textarea>
+                </form>
+                <div class="button-sub">
+                    <button type="submit" class="submit-button">Enviar Mensagem</button>
+                </div>
+
+            </section>
+        </div>
 
 
     </main>
@@ -76,8 +78,12 @@
                     </a>
                 </div>
             </div>
-            <p class="copy">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</p>
-            <img src="/img/ford-96.png" alt="Logo Ford" class="logo-footer">
+            <div class="copy">
+                <p class="copy-footer">Copyright © 2025 Ford Motor Company - Todos os direitos reservados</p>
+            </div>
+            <div class="div-logo-footer">
+                <img src="/img/ford-96.png" alt="Logo Ford" class="logo-footer">
+            </div>
         </div>
 
     </footer>
